@@ -100,13 +100,9 @@ a {
     /* border: 2px solid black; */
     height: 78.3vh;
     margin-top: 90px;
-    /* Adjust this value to match the height of the header */
     grid-template-columns: repeat(11, 1fr);
-    /* Two columns of equal width */
     grid-template-rows: repeat(9, 1fr);
-    /* Three rows of equal height */
     gap: 2px;
-    /* Reduced space between grid items */
     justify-items: center;
     align-items: center;
 }
@@ -115,9 +111,7 @@ a {
 .trainerBox {
     /* border: 1px solid black; */
     grid-column: 1 / 4;
-    /* Place in the first column */
     grid-row: 1 / 9;
-    /* Place in the first row */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -183,7 +177,7 @@ a {
 .trainerStat img {
     width: 20px;
     height: 20px;
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    flex-shrink: 0;
 }
 
 
@@ -191,9 +185,7 @@ a {
 .followBox {
     /* border: 1px solid black; */
     grid-column: 1 / 4;
-    /* Place in the second column */
     grid-row: 9 / 10;
-    /* Place in the first row */
     display: flex;
     width: 100%;
     height: 100%;
@@ -462,11 +454,8 @@ a {
 
 /* POKEMON DISPLAY */
 .pokemonDisplay {
-    /* border: 1px solid black; */
     grid-column: 9 / 12;
-    /* Span across both columns */
     grid-row: 1 / 10;
-    /* Place in the third row */
     display: flex;
     width: 100%;
     height: 100%;
@@ -590,27 +579,27 @@ a {
     }
     .trainerPokemons {
         display: flex;
-        flex-wrap: wrap; /* Allow wrapping to the next row */
-        justify-content: space-evenly; /* Align items horizontally */
-        align-items: center; /* Align items vertically */
-        gap: 1px; /* Adjust to fit the parent container */
-        width: 95%; /* Adjust to fit the parent container */
-        height: 80%; /* Adjust to fit the parent container */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1px;
+        width: 95%;
+        height: 80%;
     }
     .pokemonBox {
-        flex: 1 1 calc(30% - 10px); /* Adjust width to fit 3 items per row with gap */
-        max-width: calc(30% - px); /* Ensure max width matches flex basis */
-        height: calc(100% /2 - 1px); /* Adjust height to fit 3 rows with gap */
+        flex: 1 1 calc(30% - 10px);
+        max-width: calc(30% - px);
+        height: calc(100% /2 - 1px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 5px; /* Adjusted for consistency */
+        border-radius: 5px;
     }
     .pokemonBox img {
-        width: 90%; /* Slightly smaller to fit within padding */
-        height: 90%; /* Adjust height to fit the box */
-        object-fit: contain; /* Ensure the gif fits properly */
+        width: 90%;
+        height: 90%;
+        object-fit: contain; 
     }
 
     .pokemonBox p {
@@ -719,9 +708,9 @@ a {
         gap: 3px;
     }
     .mainContainer {
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Adjust rows automatically */
-        gap: 10px; /* Add some spacing between items */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
     }
 
     .trainerBox,
@@ -729,13 +718,13 @@ a {
     .trainerPokemonBox,
     .purchaseBox,
     .pokemonDisplay {
-        grid-column: 1 / -1; /* Span across the single column */
-        grid-row: auto; /* Adjust row placement automatically */
-        width: 100%; /* Ensure full width */
+        grid-column: 1 / -1;
+        grid-row: auto;
+        width: 100%;
     }
 
     .trainerBox {
-        order: 1; /* Maintain logical order */
+        order: 1;
     }
 
     .followBox {
