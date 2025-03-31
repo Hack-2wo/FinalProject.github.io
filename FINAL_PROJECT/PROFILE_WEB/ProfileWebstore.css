@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(backgroundFinals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* HEADER */
+
+.navi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(to right, #62D5B4, #62D5B4, #399494);
+    width: 110%;
+    padding: 10px;
+    height: 15%;
+    top: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    transition: 0.3s all ease;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo:hover {
+    transition: 0.3s all ease;
+    box-shadow: 0px 0px 5px white;
+}
+
+.scale:hover {
+    transition: 0.5s all ease;
+    scale: 110%;
+}
+
+.scale:not(:hover) {
+    transition: 0.5s all ease;
+}
+
+.navbuttons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbuttons:active {
+    transition: 0.5s all ease;
+    scale: 120%;
+    font-weight: bolder;
+}
+
+.title:hover {
+    color: rgb(223, 223, 223);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 700px;
+    gap: 20px;
+}
+
+
+/* .menu>a:hover {
+    color: green;
+    font-size: 1.1rem;
+    text-decoration: underline;
+} */
+
+/* .home {
+    display: flex;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    padding-left: 40px;
+    align-items: center;
+    font-weight: bolder;
+    cursor: default;
+    text-decoration: none;
+} */
+
+
+/* PROFILE */
+.mainContainer {
+    display: grid;
+    /* border: 2px solid black; */
+    height: 78.3vh;
+    margin-top: 90px;
+    /* Adjust this value to match the height of the header */
+    grid-template-columns: repeat(11, 1fr);
+    /* Two columns of equal width */
+    grid-template-rows: repeat(9, 1fr);
+    /* Three rows of equal height */
+    gap: 2px;
+    /* Reduced space between grid items */
+    justify-items: center;
+    align-items: center;
+}
+
+/* TRAINER PROFILE BOX */
+.trainerBox {
+    /* border: 1px solid black; */
+    grid-column: 1 / 4;
+    /* Place in the first column */
+    grid-row: 1 / 9;
+    /* Place in the first row */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainerProfile {
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    /* background-color: lightblue; */
+    background-image: url(profileBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trainerImage img {
+    border: 2px solid blue;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+.trainerName {
+    /* border: 1px solid black; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trainerStats {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 7px; */
+}
+
+.trainerStat {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 20vw;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trainerStat img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+
+/* FOLLOW TRAINER BUTTON */
+.followBox {
+    /* border: 1px solid black; */
+    grid-column: 1 / 4;
+    /* Place in the second column */
+    grid-row: 9 / 10;
+    /* Place in the first row */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+#followTrainer {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: lightseagreen; */
+    color: white;
+    width: 24vw;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: rgb(137, 235, 137);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: lightseagreen;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+/* TRAINER POKEMONS */
+
+.trainerPokemonBox {
+    /* border: 1px solid black; */
+    grid-column: 4 / 9;
+    grid-row: 1 / 6;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trainerNamePokemon {
+    display: flex;
+    border: 2px solid black;
+    width: 95%;
+    height: 15%;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trainerPokemons {
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: end; */
+    /* align-items: center; */
+    /* padding: 2px; */
+    gap: 1px;
+    width: 95%;
+    height: 65%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(177, 238, 177);
+    font-weight: bold;
+}
+
+.pokemonBox {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 5px; */
+    /* border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    /* height: 100%; */
+    /* padding: 10px; */
+    background: url(boxpokemonbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pokemonBox:hover {
+    background: url(transitionPokemonBox.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.6s;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 2px black;
+    transition: 0.3s;
+}
+
+
+.pokemonBox img {
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* RECENTLY PURCHASED */
+.purchaseBox {
+    /* border: 1px solid black; */
+    grid-column: 4 / 9;
+    /* Place in the second column */
+    grid-row: 6 / 10;
+    /* Place in the second row */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.titlePurchase {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 20%;
+    margin-top: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: lavender;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.purchasedItems {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* gap: 5px; */
+    justify-content: space-evenly;
+    align-items: center;
+    width: 98%;
+    height: 78%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(177, 238, 177);
+}
+
+.items {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: url(purchasedItemBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.items:hover {
+    background-image: url(transitionPurchasedItem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.items img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.items p{
+    width: 9.5vw;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1rem;
+    /* background-color: lavender; */
+    /* font-weight: bold; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-weight: bold; */
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    /* font-size: medium; */
+}
+
+/* POKEMON DISPLAY */
+.pokemonDisplay {
+    /* border: 1px solid black; */
+    grid-column: 9 / 12;
+    /* Span across both columns */
+    grid-row: 1 / 10;
+    /* Place in the third row */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.favPokemonBox {
+    /* border: 5px solid black; */
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 88%;
+    padding: 20px;
+    margin-top: 45px;
+    border-radius: 5px;
+    background-image: url(boxpokemonbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.favPokemonBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.favPokemonBox:hover {
+    background-image: url(transitionFavPokemon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footerContainer {
+    position: fixed;
+    background-color: aqua;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+#sideBar {
+    position: fixed;
+    padding-top: 2rem;
+    gap: 30px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background: #62D5B4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#sideBar h2 {
+    width: 100%;
+}
+
+#sideBar a {
+    width: 100%;
+}
+
+#burger {
+    display: none;
+}
+
+.menuList {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: right;
+    gap: 10px;
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 1438px){
+    .pokemonBox p{
+        font-size: small;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 400px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1315px) { 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 300px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .trainerPokemonBox {
+        padding-top: 20px;
+    }
+    .trainerPokemons {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping to the next row */
+        justify-content: space-evenly; /* Align items horizontally */
+        align-items: center; /* Align items vertically */
+        gap: 1px; /* Adjust to fit the parent container */
+        width: 95%; /* Adjust to fit the parent container */
+        height: 80%; /* Adjust to fit the parent container */
+    }
+    .pokemonBox {
+        flex: 1 1 calc(30% - 10px); /* Adjust width to fit 3 items per row with gap */
+        max-width: calc(30% - px); /* Ensure max width matches flex basis */
+        height: calc(100% /2 - 1px); /* Adjust height to fit 3 rows with gap */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px; /* Adjusted for consistency */
+    }
+    .pokemonBox img {
+        width: 90%; /* Slightly smaller to fit within padding */
+        height: 90%; /* Adjust height to fit the box */
+        object-fit: contain; /* Ensure the gif fits properly */
+    }
+
+    .pokemonBox p {
+        display: none;
+    }
+    .trainerStat{
+        padding-left: 5px;
+        gap:3px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .trainerImage img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .trainerStat {
+        font-size: 1rem;
+    }
+
+    .items p{
+        font-size: 1rem;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 150px;
+        gap: 3px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .items p{
+        font-size: .8rem;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        gap: 3px;
+    }
+ }
+
+ @media (max-width: 923px) { 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        gap: 3px;
+    }
+ }
+
+ @media (max-width: 869px) { 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 25px;
+        gap: 1px;
+    }
+ }
+
+@media (max-width: 835x) { 
+    .trainerStat {
+        font-size: .6rem;
+    }
+    .items p{
+        font-size: .6rem;
+    } 
+    .menu{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        gap: 1px;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 790px) { 
+    .trainerStat {
+        font-size: .8rem;
+    }
+
+    .trainerName {
+        font-size: 1.2rem;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1px;
+        font-size: .5rem;
+    }
+ }
+
+@media (max-width: 700px) { 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+        gap: 3px;
+    }
+    .mainContainer {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto; /* Adjust rows automatically */
+        gap: 10px; /* Add some spacing between items */
+    }
+
+    .trainerBox,
+    .followBox,
+    .trainerPokemonBox,
+    .purchaseBox,
+    .pokemonDisplay {
+        grid-column: 1 / -1; /* Span across the single column */
+        grid-row: auto; /* Adjust row placement automatically */
+        width: 100%; /* Ensure full width */
+    }
+
+    .trainerBox {
+        order: 1; /* Maintain logical order */
+    }
+
+    .followBox {
+        order: 2;
+    }
+
+    #followTrainer {
+        font-size: .7rem;
+    }
+
+    .trainerPokemonBox {
+        order: 3;
+    }
+
+    .purchaseBox {
+        order: 4;
+    }
+
+    .pokemonDisplay {
+        order: 5;
+    }
+
+    .trainerBox{
+        padding: 2vh;
+        height: 80%;
+    }
+
+    .trainerProfile {
+        width: 95%;
+    }
+
+    .trainerName {
+        font-size: 2rem;
+    }
+
+    .trainerStats{
+        align-items: start;
+        padding: 5px;
+        padding-left: 50px;
+        width: 90%;
+    }
+
+    .trainerStat {
+        padding-left: 20px;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .trainerImage img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pokemonDisplay{
+        height: 50vh;
+        padding-bottom: 20vh;
+    }
+
+    #hideOnTablet {
+        position: absolute;
+        top: 100%;
+        right: -50%;
+        width: 200px;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+
+    #hideOnTablet {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #burger:hover {
+        color: green;
+        cursor: pointer;
+    }
+
+    #close:hover {
+        color: green;
+        cursor: pointer;
+    }
+}
