@@ -1,0 +1,254 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackTwo</title>
+    <link rel="icon" type="image/png" href="pokemon-go-logo-png_seeklogo-268738.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="store.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cbe5cf6b5c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navi">
+        <img src="hacktwo.png" class="logo h-75" alt="">
+        <div class="menu menuList">
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="#">Home</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="#">Store</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="">History</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a
+                    href="/Advance Web/Finals Groupings/PROFILE WEB/ProfileWebstore.html">Profile</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="">Sign In</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a
+                href="/Advance Web/Finals Groupings/CART WEB/CartWebstore.html"><i
+                    class="fa-solid fa-cart-shopping"></i></a></a></h2>
+            <h2 class="navbuttons scale" id="burger" onclick=showSidebar()><i class="fa-solid fa-bars"></i></h2>
+        </div>
+        <div class="menu menuList" id="sideBar">
+            <h2 class="navbuttons scale" id="close" onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></h2>
+            <h2 class="navbuttons scale"><a href="">Home</a></h2>
+            <h2 class="navbuttons scale"><a href="#store">Store</a></h2>
+            <h2 class="navbuttons scale"><a href="">History</a></h2>
+            <h2 class="navbuttons scale"><a
+                    href="/Advance Web/Finals Groupings/PROFILE WEB/ProfileWebstore.html">Profile</a></h2>
+            <h2 class="navbuttons scale"><a href="">Sign In</a></h2>
+            <h2 class="navbuttons scale"><a
+                href="/Advance Web/Finals Groupings/CART WEB/CartWebstore.html"><i
+                    class="fa-solid fa-cart-shopping"></i></a></a></h2>
+        </div>
+    </div>
+    <div class="bar"></div>
+    <section id="home" class="d-flex justify-content-center align-items-center h-100">
+        <div class="carousel">
+            <div class="slides h-100">
+                <div class="slide">
+                    <div id="slide1" class="blur"></div>
+                    <div class="bg-desc h-100">
+                        <div id="onetime">
+                            ONE TIME ONLY
+                        </div>
+                        <div id="sub" class="d-flex">
+                            Power Up Ticket Ultra Box
+                        </div>
+                        <img src="goldbox.png" alt="" class="gifts">
+                        <p>Can only be purchased one time.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div id="slide2" class="blur"></div>
+                    <div class="bg-desc h-100">
+                        <div id="onetime">
+                            ONE TIME ONLY
+                        </div>
+                        <div id="sub" class="d-flex">
+                            Bug Out Ultra Ticket Box
+                        </div>
+                        <img src="ylbox.webp" alt="" class="gifts">
+                        <p>Can only be purchased one time.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div id="slide3" class="blur"></div>
+                    <div class="bg-desc h-100">
+                        <div id="onetime">
+                            ONE TIME ONLY
+                        </div>
+                        <div id="sub" class="d-flex">
+                            Pokemon GO Fest 2025: Global Ticket
+                        </div>
+                        <img src="web-boost-box-1223.webp" alt="" class="gifts">
+                        <p>Can only be purchased one time.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div id="slide4" class="blur"></div>
+                    <div class="bg-desc h-100">
+                        <div id="discover">
+                            Discover exclusive offers and get the best value on PokéCoins on the Pokémon GO Web Store!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow left-arrow">◀</button>
+            <button class="arrow right-arrow">▶</button>
+        </div>
+    </section>
+    <section id="store1">
+        <h2 class="subs"><br>Item Boxes</h2>
+        <div class="items itembox d-grid">
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="bundle.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Ultra Raid Box</h6>
+                <button class="buy">P149.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="mmbox.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Might and Mastery Box</h6>
+                <button class="buy">P149.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="EggIncubatorSuper_Empty.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Super Incubator</h6>
+                <button class="buy">P88.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="EggIncubatorUnlimited_Activated.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Egg Incubator</h6>
+                <button class="buy">P88.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="Max_Revive.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Max Revive</h6>
+                <button class="buy">P59.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="prem bp.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Premium Battle Pass</h6>
+                <button class="buy">P88.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="item_mp_replenish.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Max Particle Pack x6</h6>
+                <button class="buy">P235.00</button>
+
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="Max_Mushroom.png" class="test h-50" alt="">
+                </div>
+
+                <h6>Max Mushroom</h6>
+                <button class="buy">P239.00</button>
+            </div>
+        </div>
+    </section>
+    <section id="store2">
+        <div class="bar h-25"></div>
+        <h2 class="subs"><br>PokeCoins</h2>
+        <div class="items itembox d-grid">
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="coin-bundle-xxsmall.webp" class="test h-50" alt="">
+                </div>
+                <h6>110 PokeCoins</h6>
+                <button class="buy">P29.00</button>
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="coin-bundle-xsmall.webp" class="test h-50" alt="">
+                </div>
+                <h6>600 PokeCoins</h6>
+                <button class="buy">P149.00</button>
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="coin-bundle-small_v2.webp" class="test h-50" alt="">
+                </div>
+                <h6>1,300 PokeCoins</h6>
+                <button class="buy">P289.00</button>
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="coin-bundle-medium_v2.webp" class="test h-50" alt="">
+                </div>
+                <h6>2,700 PokeCoins</h6>
+                <button class="buy">P589.00</button>
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="coin-bundle-large-v2.webp" class="test h-50" alt="">
+                </div>
+                <h6>5,600 PokeCoins</h6>
+                <button class="buy">P1,170.00</button>
+            </div>
+            <div class="store-item card d-flex justify-content-around h-100 ">
+                <div class="img-container d-flex justify-content-center">
+                    <img src="coin-bundle-xlarge.webp" class="test h-50" alt="">
+                </div>
+                <h6>15,500 PokeCoins</h6>
+                <button class="buy">P2,950.00</button>
+            </div>
+        </div>
+    </section>
+    <div class="bar h-25"></div>
+    <section id="store3">
+        <h2 class="subs"><br>Pokemon Bundles</h2>
+        <div class="items itembox bundle d-flex">
+            <div id="longbox" class="store-item card d-flex justify-content-around h-50 ">
+                <div id="bundle" class="img-container d-flex justify-content-center">
+                    <img src="ml_default_sku_id.webp" class="test h-50" alt="">
+                </div>
+                <h6>Mystery Boxes</h6>
+                <p>3 Daily Bundles</p>
+                <button id="bundlebutton" class="buy">P59.00</button>
+            </div>
+        </div>
+    </section>
+    <div class="footer d-flex">
+        <div id="links" class="d-grid">
+            <a href="https://pokemongolive.com/">Pokemon GO Live</a>
+            <a href="https://store.pokemongolive.com/support">Support</a>
+            <a href="https://pokemongolive.com/leaderboard">Leaderboard</a>
+            <a href="https://store.pokemongolive.com/offer-redemption">Code Redemption</a>
+            <a href="https://pokemongolive.com/events">Events</a>
+            <a href="https://pokemongolive.com/community-day/map">Community Day Map</a>
+            <a href="https://pokemongolive.com/news">News</a>
+        </div>
+        <br>
+        <hr>
+        <h6 id="rights">HackTwo 2025 All Rights Reserved. Strictly for Educational Purposes Only.</h6>
+        </footer>
+        <script src="test.js"></script>
+</body>
+
+</html>
