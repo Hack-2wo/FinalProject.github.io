@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             // Redirect to a specific link after validation
             event.preventDefault();
-            window.location.href = "https://www.facebook.com/jefferson.petronio/"; // Change this to your desired link
+            window.location.href = "https://hack-2wo.github.io/FinalProject.github.io/FINAL_PROJECT/FINALS/store.html"; // Change this to your desired link
         }
     });
 
