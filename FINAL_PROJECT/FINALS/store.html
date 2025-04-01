@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +6,7 @@
     <link rel="icon" type="image/png" href="pokemon-go-logo-png_seeklogo-268738.png">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="mdal.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/cbe5cf6b5c.js" crossorigin="anonymous"></script>
@@ -23,8 +23,8 @@
                     href="/Advance Web/Finals Groupings/PROFILE WEB/ProfileWebstore.html">Profile</a></h2>
             <h2 class="navbuttons scale" id="hideOnTablet"><a href="">Sign In</a></h2>
             <h2 class="navbuttons scale" id="hideOnTablet"><a
-                href="/Advance Web/Finals Groupings/CART WEB/CartWebstore.html"><i
-                    class="fa-solid fa-cart-shopping"></i></a></a></h2>
+                    href="/Advance Web/Finals Groupings/CART WEB/CartWebstore.html"><i
+                        class="fa-solid fa-cart-shopping"></i></a></a></h2>
             <h2 class="navbuttons scale" id="burger" onclick=showSidebar()><i class="fa-solid fa-bars"></i></h2>
         </div>
         <div class="menu menuList" id="sideBar">
@@ -35,9 +35,8 @@
             <h2 class="navbuttons scale"><a
                     href="/Advance Web/Finals Groupings/PROFILE WEB/ProfileWebstore.html">Profile</a></h2>
             <h2 class="navbuttons scale"><a href="">Sign In</a></h2>
-            <h2 class="navbuttons scale"><a
-                href="/Advance Web/Finals Groupings/CART WEB/CartWebstore.html"><i
-                    class="fa-solid fa-cart-shopping"></i></a></a></h2>
+            <h2 class="navbuttons scale"><a href="/Advance Web/Finals Groupings/CART WEB/CartWebstore.html"><i
+                        class="fa-solid fa-cart-shopping"></i></a></a></h2>
         </div>
     </div>
     <div class="bar"></div>
@@ -98,6 +97,13 @@
     </section>
     <section id="store1">
         <h2 class="subs"><br>Item Boxes</h2>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content d-flex justify-content-center">
+                <p class="text-outline">Item has been added to the cart!</p>
+            </div>
+        </div>
         <div class="items itembox d-grid">
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
@@ -105,7 +111,7 @@
                 </div>
 
                 <h6>Ultra Raid Box</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P149.00</button>
+                <button onclick="addToCart()" class="buy">P149.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -114,7 +120,7 @@
                 </div>
 
                 <h6>Might and Mastery Box</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P149.00</button>
+                <button onclick="addToCart()" class="buy">P149.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -123,7 +129,7 @@
                 </div>
 
                 <h6>Super Incubator</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P88.00</button>
+                <button onclick="addToCart()" class="buy">P88.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -132,7 +138,7 @@
                 </div>
 
                 <h6>Egg Incubator</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P88.00</button>
+                <button onclick="addToCart()" class="buy">P88.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -141,7 +147,7 @@
                 </div>
 
                 <h6>Max Revive</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P59.00</button>
+                <button onclick="addToCart()" class="buy">P59.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -150,7 +156,7 @@
                 </div>
 
                 <h6>Premium Battle Pass</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P88.00</button>
+                <button onclick="addToCart()" class="buy">P88.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -159,7 +165,7 @@
                 </div>
 
                 <h6>Max Particle Pack x6</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P235.00</button>
+                <button onclick="addToCart()" class="buy">P235.00</button>
 
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
@@ -168,61 +174,61 @@
                 </div>
 
                 <h6>Max Mushroom</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P239.00</button>
+                <button onclick="addToCart()" class="buy">P239.00</button>
             </div>
         </div>
     </section>
     <section id="store2">
         <div class="bar h-25"></div>
-        <h2 class="subs"><br>PokeCoins</h2>
+        <h2 class="subs"><br>PokéCoins</h2>
         <div class="items itembox d-grid">
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
                     <img src="coin-bundle-xxsmall.webp" class="test h-50" alt="">
                 </div>
-                <h6>110 PokeCoins</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P29.00</button>
+                <h6>110 PokéCoins</h6>
+                <button onclick="addToCart()" class="buy">P29.00</button>
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
                     <img src="coin-bundle-xsmall.webp" class="test h-50" alt="">
                 </div>
-                <h6>600 PokeCoins</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P149.00</button>
+                <h6>600 PokéCoins</h6>
+                <button onclick="addToCart()" class="buy">P149.00</button>
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
                     <img src="coin-bundle-small_v2.webp" class="test h-50" alt="">
                 </div>
-                <h6>1,300 PokeCoins</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P289.00</button>
+                <h6>1,300 PokéCoins</h6>
+                <button onclick="addToCart()" class="buy">P289.00</button>
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
                     <img src="coin-bundle-medium_v2.webp" class="test h-50" alt="">
                 </div>
-                <h6>2,700 PokeCoins</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P589.00</button>
+                <h6>2,700 PokéCoins</h6>
+                <button onclick="addToCart()" class="buy">P589.00</button>
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
                     <img src="coin-bundle-large-v2.webp" class="test h-50" alt="">
                 </div>
-                <h6>5,600 PokeCoins</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P1,170.00</button>
+                <h6>5,600 PokéCoins</h6>
+                <button onclick="addToCart()" class="buy">P1,170.00</button>
             </div>
             <div class="store-item card d-flex justify-content-around h-100 ">
                 <div class="img-container d-flex justify-content-center">
                     <img src="coin-bundle-xlarge.webp" class="test h-50" alt="">
                 </div>
-                <h6>15,500 PokeCoins</h6>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" class="buy">P2,950.00</button>
+                <h6>15,500 PokéCoins</h6>
+                <button onclick="addToCart()" class="buy">P2,950.00</button>
             </div>
         </div>
     </section>
     <div class="bar h-25"></div>
     <section id="store3">
-        <h2 class="subs"><br>Pokemon Bundles</h2>
+        <h2 class="subs"><br>Pokémon Bundles</h2>
         <div class="items itembox bundle d-flex">
             <div id="longbox" class="store-item card d-flex justify-content-around h-50 ">
                 <div id="bundle" class="img-container d-flex justify-content-center">
@@ -230,7 +236,8 @@
                 </div>
                 <h6>Mystery Boxes</h6>
                 <p>3 Daily Bundles</p>
-                <button onclick="window,location.href='FINAL_PROJECT/CartWebstore.html'" id="bundlebutton" class="buy">P59.00</button>
+                <button onclick="addToCart()" id="bundlebutton"
+                    class="buy">P59.00</button>
             </div>
         </div>
     </section>
@@ -249,6 +256,7 @@
         <h6 id="rights">HackTwo 2025 All Rights Reserved. Strictly for Educational Purposes Only.</h6>
         </footer>
         <script src="test.js"></script>
+        <script src="modal.js"></script>
 </body>
 
 </html>
