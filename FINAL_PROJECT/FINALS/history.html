@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Webstore - Payment History</title>
+    <link rel="stylesheet" href="history.css">
+    <script defer src="history.js"></script>
+</head>
+<body>
+    <div class="navi">
+        <img src="headerlogo.png" class="logo h-75" alt="">
+        <div class="menu menuList">
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="">Home</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="#store">Store</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="">History</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="/Advance Web/Finals Groupings/PROFILE WEB/ProfileWebstore.html">Profile</a></h2>
+            <h2 class="navbuttons scale" id="hideOnTablet"><a href="">Sign In</a></h2>
+            <h2 class="navbuttons scale" id="burger" onclick=showSidebar()><i class="fa-solid fa-bars"></i></h2>
+        </div>
+        <div class="menu menuList" id="sideBar">
+            <h2 class="navbuttons scale" id="close" onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></h2>
+            <h2 class="navbuttons scale"><a href="">Home</a></h2>
+            <h2 class="navbuttons scale"><a href="#store">Store</a></h2>
+            <h2 class="navbuttons scale"><a href="">History</a></h2>
+            <h2 class="navbuttons scale"><a href="/Advance Web/Finals Groupings/PROFILE WEB/ProfileWebstore.html">Profile</a></h2>
+            <h2 class="navbuttons scale"><a href="">Sign In</a></h2>
+        </div>
+    </div>
+    <header class="main-header">
+        <h1>Payment History</h1>
+        <a href="https://www.facebook.com/jefferson.petronio/" class="back-button">⬅ Back to Home</a>
+    </header>
+
+    <main>
+        <section class="payment-history">
+            <h2>Recent Transactions</h2>
+            <p>Here is a list of all the payments you have made on the Pokémon Webstore.</p>
+            <div id="payment-history-grid" class="history-grid"></div>
+        </section>
+    </main>
+
+    <div class="footer d-flex">
+        <div id="links" class="d-grid">
+            <a href="https://pokemongolive.com/">Pokemon GO Live</a>
+            <a href="https://store.pokemongolive.com/support">Support</a>
+            <a href="https://pokemongolive.com/leaderboard">Leaderboard</a>
+            <a href="https://store.pokemongolive.com/offer-redemption">Code Redemption</a>
+            <a href="https://pokemongolive.com/events">Events</a>
+            <a href="https://pokemongolive.com/community-day/map">Community Day Map</a>
+            <a href="https://pokemongolive.com/news">News</a>
+        </div>
+        <br>
+        <hr>
+        <h6 id="rights">HackTwo 2025 All Rights Reserved. Strictly for Educational Purposes Only.</h6>
+    </div>
+</body>
+</html>
